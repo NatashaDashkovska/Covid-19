@@ -3,8 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Covid-19" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covid-19</title>
+    <link rel="stylesheet" href="./css/index.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="container header">
+      <div class="logo">
+        <img src="./images/svg/logo.svg" alt="" />
+        <span class="logo-span">Covid - 19</span>
+      </div>
+      <nav class="mobile-menu" data-menu>
+        <div class="content">
+          <ul class="nav__list">
+            <li class="nav__item">Overview</li>
+            <li class="nav__item">Contagion</li>
+            <li class="nav__item">Symptoms</li>
+            <li class="nav__item">Prevention</li>
+          </ul>
+          <a href="">Contact</a>
+        </div>
+      </nav>
+      <button
+        aria-label="Открыть меню"
+        type="button"
+        class="btn--burger"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use
+            class="icon-burger-open"
+            href="images/svg/sprite.svg#icon-burger-close"
+          ></use>
+          <use
+            class="icon-burger-close"
+            href="images/svg/sprite.svg#icon-burger-open"
+          ></use>
+        </svg>
+      </button>
+    </header>
+
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
