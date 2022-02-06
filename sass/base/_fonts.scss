@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/lato-700.woff2') format('woff2'),
+    url('../fonts/lato-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/lato-300.woff2') format('woff2'),
+    url('../fonts/lato-300.woff') format('woff');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Red-hat-display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/red-hat-display-700.woff2') format('woff2'),
+    url('../fonts/red-hat-display-700.woff') format('woff');
+}
