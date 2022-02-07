@@ -1,14 +1,75 @@
+.header {
+  @include for-size(tablet) {
+    display: flex;
+    border-bottom: 1px solid #000000;
+  }
+}
+
+.nav__list {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+
 .nav__item {
+  margin-bottom: 20px;
+
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
+  line-height: 1.22;
 
-  color: #fb4c47;
+  color: $secondary-title-color;
 
-  &:not(:last-child) {
-    margin-bottom: 15px;
+  &:hover,
+  &:focus {
+    color: $primary-title-color;
+  }
+  @include for-size(tablet) {
+    margin-bottom: 0px;
+    padding: 50px 0px 42px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  @include for-size(desktop) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.nav__btn {
+  margin-top: 25px;
+  align-items: center;
+  display: inline-block;
+
+  padding: 12px 36px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: $primary-title-color;
+
+  border: 2px solid $primary-title-color;
+  box-sizing: border-box;
+  border-radius: 46px;
+
+  &:hover,
+  &:focus {
+    color: $secondary-title-color;
+    border: 2px solid $secondary-title-color;
+  }
+
+  @include for-size(tablet) {
+    margin-left: auto;
+    padding: 16px 45px;
+    margin-bottom: 25px;
   }
 }

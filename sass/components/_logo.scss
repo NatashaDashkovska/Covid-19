@@ -5,6 +5,20 @@
   & > img {
     margin-right: 10px;
   }
+
+  @include for-size(tablet) {
+    margin-right: 26px;
+  }
+
+  @include for-size(desktop) {
+    width: 400px;
+    padding: 31px 0px 20px;
+
+    margin-right: 604px;
+    & > img {
+      margin-right: 14px;
+    }
+  }
 }
 
 .logo-span {
@@ -19,4 +33,14 @@
 
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
     0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 768px) and (max-width: 1739px) {
+    display: none;
+  }
+
+  @include for-size(desktop) {
+    display: block;
+    // margin-top: 51px;
+    // margin-bottom: 40px;
+  }
 }
