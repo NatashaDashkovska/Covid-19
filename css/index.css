@@ -346,6 +346,7 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 @font-face {
@@ -672,6 +673,92 @@ img {
 @media (min-width: 1740px) {
   .logo-span {
     display: block;
+  }
+}
+
+.hero {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+  }
+}
+
+.hero__title {
+  padding: 14px 0px;
+  margin-bottom: 12px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  color: #fa5652;
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    text-align: start;
+    max-width: 420px;
+  }
+}
+
+.hero__text {
+  margin-bottom: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #4b4f51;
+}
+
+@media (min-width: 768px) {
+  .hero__text {
+    line-height: 1.9;
+  }
+}
+
+.hero__btn {
+  display: inline-block;
+  background: #fb4c47;
+  -webkit-box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+  border-radius: 65px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 12px 36px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+  .hero__btn {
+    padding: 24px 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    position: absolute;
+    left: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-block {
+    margin-right: 50%;
+    padding: 265px 0px 246px;
   }
 }
 /*# sourceMappingURL=index.css.map */
