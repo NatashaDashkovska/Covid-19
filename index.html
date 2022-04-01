@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/index.min.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="container header">
       <div class="logo">
         <img src="./images/svg/logo.svg" alt="" />
@@ -47,6 +48,7 @@
     </header>
 
     <main>
+      <!-- hero -->
       <section class="hero container">
         <div class="hero-block">
           <h1 class="hero__title">
@@ -66,23 +68,33 @@
           <img src="./images/hero.jpg" alt="ill woman" />
         </picture>
       </section>
-      <section>
-        <h3>What Is Covid-19</h3>
-        <h2>Coronavirus</h2>
-        <p>
-          Corona viruses are a type of virus. There are many different kinds,
-          and some cause disease. A newly identified type has caused a recent
-          outbreak of respiratory illness now called COVID-19.Lauren Sauer,
-          M.S., the director of operations with the Johns Hopkins Office of
-          Critical Event Preparedness and Response
-        </p>
-        <a href="">Learn More</a>
+      <!-- Covid-19 info -->
+      <section class="covid-info-block container">
+        <picture class="virus-picture">
+          <source
+            srcset="./images/virus.jpg 1x, ./images/virus@2x.jpg 2x"
+            media="(min-width: 480px)"
+          />
+          <img src="./images/virus.jpg" alt="virus" />
+        </picture>
+        <div class="virus-block">
+          <h3 class="second-title">What Is Covid-19</h3>
+          <h2 class="main-title">Coronavirus</h2>
+          <p class="virus-block__text">
+            Corona viruses are a type of virus. There are many different kinds,
+            and some cause disease. A newly identified type has caused a recent
+            outbreak of respiratory illness now called COVID-19.Lauren Sauer,
+            M.S., the director of operations with the Johns Hopkins Office of
+            Critical Event Preparedness and Response
+          </p>
+          <a class="virus-block__btn" href="">Learn More</a>
+        </div>
       </section>
 
-      <section>
-        <h3>Covid-19</h3>
-        <h2>Contagion</h2>
-        <p>
+      <!-- <section class="contagion-section">
+        <h3 class="second-title">Covid-19</h3>
+        <h2 class="main-title">Contagion</h2>
+        <p class="contagion__text">
           Corona viruses are a type of virus. There are many different kinds,
           and some cause disease. A newly identified type
         </p>
@@ -106,8 +118,8 @@
             </p>
           </li>
         </ul>
-      </section>
-      <section>
+      </section> -->
+      <!-- <section>
         <h3>Covid-19</h3>
         <h2>Symptomps</h2>
         <p>
@@ -115,8 +127,8 @@
           and some cause disease. A newly identified type has caused a recent
           outbreak of respiratory
         </p>
-      </section>
-      <section>
+      </section> -->
+      <!-- <section>
         <h3>Covid-19</h3>
         <h2>What should we do</h2>
         <p>
@@ -162,13 +174,13 @@
             </p>
           </li>
         </ul>
-      </section>
-      <section></section>
+      </section> -->
+      <!-- <section></section>
       <section>
         <h2>Have Question in mind? Let us help you</h2>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <div class="logo">
         <img src="./images/svg/logo.svg" alt="" />
         <span class="logo-span">Covid - 19</span>
@@ -202,7 +214,7 @@
         </li>
       </ul>
       <p>2020 @ All rights reserved by pixelspark.co</p>
-    </footer>
+    </footer> -->
 
     <script src="./js/menu.js"></script>
   </body>

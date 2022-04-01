@@ -3,6 +3,7 @@
   @include for-size(tablet) {
     display: flex;
     padding-top: 30px;
+    text-align: start;
   }
 }
 
@@ -24,6 +25,10 @@
     text-align: start;
     max-width: 420px;
   }
+
+  @include for-size(desktop) {
+    margin-bottom: 96px;
+  }
 }
 
 .hero__text {
@@ -41,6 +46,10 @@
 
   @include for-size(tablet) {
     line-height: 1.9;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 54px;
   }
 }
 
@@ -63,6 +72,13 @@
   padding: 12px 36px;
   margin-bottom: 36px;
 
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #fb4c47;
+    outline: 2px solid #fb4c47;
+  }
+
   @include for-size(tablet) {
     padding: 24px 60px;
   }
@@ -78,6 +94,11 @@
 .hero-block {
   @include for-size(tablet) {
     margin-right: 50%;
-    padding: 265px 0px 246px;
+    padding: 65px 0px 230px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 50%;
+    padding: 265px 0px 230px;
   }
 }

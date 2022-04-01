@@ -1,0 +1,89 @@
+.covid-info-block {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+}
+
+
+.second-title {
+  margin-top: 60px;
+
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 1.24;
+
+  color: #fa5652;
+}
+
+.main-title {
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.2;
+
+  color: #035755;
+}
+
+.virus-picture {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+    @media screen and (min-width: 768px) {
+      min-width: 50%;
+      margin-right: 20px;
+    }
+}
+
+.virus-block {
+  text-align: center;
+}
+
+.virus-block__text {
+  margin-top: 18px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2.15;
+
+  text-transform: capitalize;
+
+  color: #4b4f51;
+
+  //   @media screen and (max-width: 768px) {
+  //     font-size: 24px;
+  //     line-height: 1.15;
+
+  //     text-transform: capitalize;
+  //   }
+}
+
+.virus-block__btn {
+  margin-top: 56px;
+  display: inline-block;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+
+  color: #fa5652;
+
+  background: rgba(250, 86, 82, 0.15);
+  border-radius: 65px;
+
+  padding: 22px 50px;
+
+  &:hover,
+  &:focus {
+    color: #fee6e5;
+    background-color: #fa5652;
+  }
+}
