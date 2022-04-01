@@ -346,6 +346,7 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 @font-face {
@@ -776,7 +777,7 @@ img {
 @media (min-width: 768px) {
   .hero-block {
     margin-right: 50%;
-    padding: 65px 0px 230px;
+    padding: 65px 0px 20px;
   }
 }
 
@@ -831,6 +832,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1740px) {
+  .virus-block {
+    text-align: start;
+  }
+}
+
 .virus-block__text {
   margin-top: 18px;
   font-family: Lato;
@@ -840,6 +847,20 @@ img {
   line-height: 2.15;
   text-transform: capitalize;
   color: #4b4f51;
+}
+
+@media screen and (min-width: 768px) {
+  .virus-block__text {
+    font-size: 20px;
+    line-height: 2.05;
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  .virus-block__text {
+    font-size: 20px;
+    line-height: 2.15;
+  }
 }
 
 .virus-block__btn {
