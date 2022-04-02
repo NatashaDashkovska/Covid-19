@@ -13,4 +13,114 @@
   text-transform: capitalize;
 
   color: #4b4f51;
+
+  @include for-size(desktop) {
+    max-width: 570px;
+
+    display: inline-block;
+
+  }
+
+
+}
+
+.contagion-image {
+  display: flex;
+  justify-content: center;
+
+  @include for-size(tablet) {
+    height: 235px;
+  }
+
+}
+
+
+.contagion-item {
+  margin-top: 16px;
+  padding-bottom: 16px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+
+  @include for-size(tablet) {
+    width: calc((100%-31*2)/3);
+
+
+    &:not(:last-child) {
+      margin-right: 31px;
+    }
+  }
+
+  @include for-size(desktop) {
+    padding: 65px 49px 95px;
+  }
+
+}
+
+
+.contagion-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @include for-size(desktop) {
+    margin-top: 111px;
+  }
+}
+
+.contagion-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.47;
+
+  text-transform: capitalize;
+
+  color: #035755;
+
+  margin-top: 24px;
+
+  @media screen and (min-width: 1740px) {
+    font-size: 36px;
+    line-height: 1.47;
+
+    margin-top: 55px;
+  }
+}
+
+
+.contagion-item__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.35;
+
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #4B4F51;
+
+  margin-top: 16px;
+
+  @include for-size(tablet) {
+    font-size: 14px;
+    line-height: 2.15;
+  }
+
+
+  @include for-size(tablet) {
+  margin-top: 13px;
+  }
+
+
+
+  @include for-size(desktop) {
+    font-size: 18px;
+    line-height: 1.85;
+  }
+
 }

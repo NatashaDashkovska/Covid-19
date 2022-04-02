@@ -15,6 +15,15 @@
   line-height: 1.24;
 
   color: #fa5652;
+
+    @include for-size(tablet) {
+      margin-bottom: 6px;
+    }
+
+
+    @include for-size(desktop) {
+    margin-bottom: 8px;
+    }
 }
 
 .main-title {
@@ -25,6 +34,16 @@
   line-height: 1.2;
 
   color: #035755;
+
+
+      @include for-size(tablet) {
+        margin-bottom: 24px;
+      }
+      
+      
+      @include for-size(desktop) {
+        margin-bottom: 31px;
+      }
 }
 
 .virus-picture {

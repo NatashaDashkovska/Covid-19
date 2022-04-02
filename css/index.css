@@ -346,7 +346,6 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 @font-face {
@@ -806,6 +805,18 @@ img {
   color: #fa5652;
 }
 
+@media (min-width: 768px) {
+  .second-title {
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .second-title {
+    margin-bottom: 8px;
+  }
+}
+
 .main-title {
   font-family: Red Hat Display;
   font-style: normal;
@@ -813,6 +824,18 @@ img {
   font-size: 50px;
   line-height: 1.2;
   color: #035755;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .main-title {
+    margin-bottom: 31px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -896,5 +919,143 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #4b4f51;
+}
+
+@media (min-width: 1740px) {
+  .contagion__text {
+    max-width: 570px;
+    display: inline-block;
+  }
+}
+
+.contagion-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .contagion-image {
+    height: 235px;
+  }
+}
+
+.contagion-item {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .contagion-item {
+    width: calc((100%-31*2)/3);
+  }
+  .contagion-item:not(:last-child) {
+    margin-right: 31px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .contagion-item {
+    padding: 65px 49px 95px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contagion-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1740px) {
+  .contagion-list {
+    margin-top: 111px;
+  }
+}
+
+.contagion-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.47;
+  text-transform: capitalize;
+  color: #035755;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 1740px) {
+  .contagion-title {
+    font-size: 36px;
+    line-height: 1.47;
+    margin-top: 55px;
+  }
+}
+
+.contagion-item__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: capitalize;
+  color: #4B4F51;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .contagion-item__text {
+    font-size: 14px;
+    line-height: 2.15;
+  }
+}
+
+@media (min-width: 768px) {
+  .contagion-item__text {
+    margin-top: 13px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .contagion-item__text {
+    font-size: 18px;
+    line-height: 1.85;
+  }
+}
+
+.symptomps-section {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.symptomps-section__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.15;
+  text-align: center;
+  text-transform: capitalize;
+  color: #4B4F51;
+}
+
+.symptomps-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=index.css.map */
