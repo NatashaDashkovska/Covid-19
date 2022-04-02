@@ -1,0 +1,96 @@
+.instruction__main-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.15;
+
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #4B4F51;
+
+    margin-top: 16px;
+
+    @include for-size(tablet) {
+        font-size: 18px;
+        line-height: 2.15;
+    }
+}
+
+.instruction-section {
+    text-align: center;
+}
+
+.title-block {
+    display: flex;
+
+}
+
+.number-title {
+    width: 75px;
+    height: 75px;
+
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.45;
+
+
+    text-transform: capitalize;
+
+    color: #FA5652;
+
+    background-color: #FEE6E5;
+    border-radius: 50%;
+
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.instruction-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.47;
+
+   align-self: center;
+    
+
+
+    text-transform: capitalize;
+
+    color: #035755;
+
+    margin-left: 40px;
+
+    @include for-size(tablet) {
+        font-size: 47px;
+        line-height: 1.47;
+    }
+}
+
+.instruction-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+
+
+    text-transform: capitalize;
+
+    color: #4B4F51;
+
+
+    margin-top: 45px;
+
+    @include for-size(tablet) {
+        font-size: 18px;
+        line-height: 2.21;
+    }
+}

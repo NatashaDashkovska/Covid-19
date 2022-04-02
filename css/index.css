@@ -346,6 +346,7 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 @font-face {
@@ -1057,5 +1058,90 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.instruction__main-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: capitalize;
+  color: #4B4F51;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .instruction__main-text {
+    font-size: 18px;
+    line-height: 2.15;
+  }
+}
+
+.instruction-section {
+  text-align: center;
+}
+
+.title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.number-title {
+  width: 75px;
+  height: 75px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.45;
+  text-transform: capitalize;
+  color: #FA5652;
+  background-color: #FEE6E5;
+  border-radius: 50%;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.instruction-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.47;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: capitalize;
+  color: #035755;
+  margin-left: 40px;
+}
+
+@media (min-width: 768px) {
+  .instruction-title {
+    font-size: 47px;
+    line-height: 1.47;
+  }
+}
+
+.instruction-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.21;
+  text-transform: capitalize;
+  color: #4B4F51;
+  margin-top: 45px;
+}
+
+@media (min-width: 768px) {
+  .instruction-text {
+    font-size: 18px;
+    line-height: 2.21;
+  }
 }
 /*# sourceMappingURL=index.css.map */
