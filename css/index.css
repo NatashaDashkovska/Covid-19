@@ -346,7 +346,6 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 @font-face {
@@ -947,7 +946,7 @@ img {
 .contagion-item {
   margin-top: 16px;
   padding-bottom: 16px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
@@ -1079,6 +1078,14 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .instruction__main-text {
+    max-width: 650px;
+    display: inline-block;
+    margin-bottom: 72px;
+  }
+}
+
 .instruction-section {
   text-align: center;
 }
@@ -1087,6 +1094,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 1740px) {
+  .title-block {
+    margin-top: 146px;
+  }
 }
 
 .number-title {
@@ -1106,6 +1119,36 @@ img {
   padding-bottom: 5px;
 }
 
+@media (min-width: 768px) {
+  .number-title {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 1.45;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .number-title {
+    width: 75px;
+    height: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 44px;
+    line-height: 1.45;
+    margin-right: 45px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
 .instruction-title {
   font-family: Lato;
   font-style: normal;
@@ -1122,6 +1165,14 @@ img {
 
 @media (min-width: 768px) {
   .instruction-title {
+    font-size: 16px;
+    line-height: 1.07;
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .instruction-title {
     font-size: 47px;
     line-height: 1.47;
   }
@@ -1132,16 +1183,118 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.21;
+  line-height: 2;
   text-transform: capitalize;
   color: #4B4F51;
-  margin-top: 45px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .instruction-text {
+    margin-bottom: 14px;
+  }
 }
 
 @media (min-width: 768px) {
   .instruction-text {
+    font-size: 12px;
+    line-height: 1.21;
+  }
+}
+
+@media (min-width: 1740px) {
+  .instruction-text {
     font-size: 18px;
     line-height: 2.21;
+    max-width: 532px;
+    margin-left: 125px;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .instruction-item {
+    margin-top: 24px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .instruction-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 340px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+  }
+  .instruction-item:nth-last-child(-n+2) {
+    margin-top: 12px;
+  }
+  .instruction-item:nth-child(2n) {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .instruction-item {
+    width: 100%;
+    padding: 6px 20px;
+  }
+  .instruction-item:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: 0px;
+  }
+  .instruction-item:nth-child(2n) > picture {
+    margin-right: 200px;
+  }
+  .instruction-item:nth-child(2n+1) > picture {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .instruction-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .instruction-image {
+    margin-left: 8px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (min-width: 1740px) {
+  .instruction-image {
+    min-width: 566px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .instruction-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=index.css.map */

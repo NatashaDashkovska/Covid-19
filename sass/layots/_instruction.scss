@@ -17,14 +17,29 @@
         font-size: 18px;
         line-height: 2.15;
     }
+
+    @include for-size(tablet) {
+        max-width: 650px;
+       display: inline-block;
+       margin-bottom: 72px;
+    }
 }
 
 .instruction-section {
     text-align: center;
+
+    // @include for-size(tablet) {
+    //     text-align: start;
+    // }
 }
 
 .title-block {
     display: flex;
+
+    @include for-size(desktop) {
+        margin-top: 146px;
+        
+    }
 
 }
 
@@ -49,6 +64,36 @@
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
+
+    @include for-size(tablet) {
+        width: 40px;
+        height: 40px;
+
+        font-size: 24px;
+        line-height: 1.45;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    @include for-size(tablet) {
+
+        width: 75px;
+        height: 75px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+
+        font-size: 44px;
+        line-height: 1.45;
+
+        margin-right: 45px;
+
+        align-items: start;
+    }
 }
 
 .instruction-title {
@@ -58,8 +103,8 @@
     font-size: 24px;
     line-height: 1.47;
 
-   align-self: center;
-    
+    align-self: center;
+
 
 
     text-transform: capitalize;
@@ -69,6 +114,13 @@
     margin-left: 40px;
 
     @include for-size(tablet) {
+        font-size: 16px;
+        line-height: 1.07;
+
+        margin-left: 8px;
+    }
+
+    @include for-size(desktop) {
         font-size: 47px;
         line-height: 1.47;
     }
@@ -79,7 +131,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.21;
+    line-height: 2;
 
 
     text-transform: capitalize;
@@ -87,10 +139,121 @@
     color: #4B4F51;
 
 
-    margin-top: 45px;
+    margin-top: 15px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 14px;
+    }
 
     @include for-size(tablet) {
+        font-size: 12px;
+        line-height: 1.21;
+    }
+
+    @include for-size(desktop) {
         font-size: 18px;
         line-height: 2.21;
+        max-width: 532px;
+        margin-left: 125px;
+
+
+        text-align: start;
     }
+}
+
+.instruction-item {
+    
+    @media screen and (max-width: 767px) {
+        margin-top: 24px;
+
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+
+        padding: 16px;
+    }
+
+
+
+    @include for-size(tablet) {
+
+        display: flex;
+        width: 340px;
+
+
+
+
+        padding: 8px;
+
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+
+        &:nth-last-child(-n+2) {
+            margin-top: 12px;
+        }
+
+        &:nth-child(2n) {
+
+            margin-left: 24px;
+        }
+
+    }
+
+    @include for-size(desktop) {
+        width: 100%;
+        padding: 6px 20px;
+
+        &:nth-child(2n) {
+
+            flex-direction: row-reverse;
+            margin-left: 0px;
+
+
+            & > picture {
+                margin-right: 200px;
+            }
+
+
+
+        }
+
+&:nth-child(2n+1) {
+        &>picture {
+            margin-left: 200px;
+        }
+}
+
+
+    }
+}
+
+.instruction-image {
+    
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    @include for-size(tablet) {
+        // min-width: 180px;
+        margin-left: 8px;
+        align-self: center;
+    }
+
+    @include for-size(desktop) {
+        min-width: 566px;
+        margin-left: 0px;
+
+
+
+    }
+}
+
+.instruction-list {
+    @include for-size(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 }
