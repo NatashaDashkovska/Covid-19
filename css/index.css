@@ -346,6 +346,7 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 @font-face {
@@ -1295,6 +1296,117 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+.form-section {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 1740px) {
+  .form-section {
+    margin-top: 150px;
+  }
+}
+
+.form-section__title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  color: #0C6C44;
+}
+
+@media (min-width: 1740px) {
+  .form-section__title {
+    font-size: 64px;
+    line-height: 1.2;
+  }
+}
+
+.input {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.08;
+  color: #758681;
+  border: none;
+}
+
+@media (min-width: 1740px) {
+  .input {
+    font-size: 22px;
+    line-height: 1.18;
+  }
+}
+
+.form {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+  border-radius: 57px;
+  padding: 18px 17px 18px 41px;
+  margin-top: 62px;
+}
+
+@media (min-width: 1740px) {
+  .form {
+    width: 790px;
+    padding: 18px 17px 18px 41px;
+  }
+}
+
+.form_button {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #FFFFFF;
+  background-color: #F44A45;
+  border-radius: 157px;
+  border: none;
+  padding: 13px 40px;
+}
+
+@media screen and (max-width: 363px) {
+  .form_button {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 364px) and (max-width: 767px) {
+  .form_button {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form_button {
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .form_button {
+    font-size: 22px;
+    line-height: 1.18;
+    margin-left: 258px;
+    margin-top: 0px;
+    padding: 26px 80px;
   }
 }
 /*# sourceMappingURL=index.css.map */
