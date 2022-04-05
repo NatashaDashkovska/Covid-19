@@ -44,3 +44,8 @@
     // margin-bottom: 40px;
   }
 }
+
+.footer-logo {
+  @media screen  and (max-width: 767px) {
+    display: none;
+} }

@@ -676,6 +676,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-logo {
+    display: none;
+  }
+}
+
 .hero {
   text-align: center;
 }
@@ -1228,7 +1234,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 340px;
+    width: 350px;
     padding: 8px;
     background-color: #FFFFFF;
     -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
@@ -1238,7 +1244,7 @@ img {
     margin-top: 12px;
   }
   .instruction-item:nth-child(2n) {
-    margin-left: 24px;
+    margin-left: 38px;
   }
 }
 
@@ -1407,6 +1413,88 @@ img {
     margin-left: 258px;
     margin-top: 0px;
     padding: 26px 80px;
+  }
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__item {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.22;
+  color: #00402E;
+}
+
+.footer__item:hover, .footer__item:focus {
+  color: #fa5652;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .footer__item {
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 50px 0px 42px;
+  }
+  .footer__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.footer__links-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 12px;
+}
+
+.footer__mark {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #415E56;
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1740px) {
+  .footer__mark {
+    font-size: 23px;
+    line-height: 1.22;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__main-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=index.css.map */

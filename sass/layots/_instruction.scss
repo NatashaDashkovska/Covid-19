@@ -177,7 +177,7 @@
     @include for-size(tablet) {
 
         display: flex;
-        width: 340px;
+        width: 350px;
 
         padding: 8px;
 
@@ -189,7 +189,7 @@
         }
 
         &:nth-child(2n) {
-margin-left: 24px;
+margin-left: 38px;
         }
 
     }
