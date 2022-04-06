@@ -1,9 +1,12 @@
 .covid-info-block {
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
-}
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
+  @media screen and (min-width: 768px) and(max-width: 1739px ) {
+    padding-bottom: 24px;
+  }
+}
 
 .second-title {
   margin-top: 60px;
@@ -16,14 +19,13 @@
 
   color: #fa5652;
 
-    @include for-size(tablet) {
-      margin-bottom: 6px;
-    }
+  @include for-size(tablet) {
+    margin-bottom: 6px;
+  }
 
-
-    @include for-size(desktop) {
+  @include for-size(desktop) {
     margin-bottom: 8px;
-    }
+  }
 }
 
 .main-title {
@@ -35,15 +37,13 @@
 
   color: #035755;
 
+  @include for-size(tablet) {
+    margin-bottom: 24px;
+  }
 
-      @include for-size(tablet) {
-        margin-bottom: 24px;
-      }
-      
-      
-      @include for-size(desktop) {
-        margin-bottom: 31px;
-      }
+  @include for-size(desktop) {
+    margin-bottom: 31px;
+  }
 }
 
 .virus-picture {
@@ -51,18 +51,18 @@
     display: none;
   }
 
-    @media screen and (min-width: 768px) {
-      min-width: 50%;
-      margin-right: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 50%;
+    margin-right: 20px;
+  }
 }
 
 .virus-block {
   text-align: center;
 
-        @media screen and (min-width: 1740px) {
-          text-align: start;
-        }
+  @media screen and (min-width: 1740px) {
+    text-align: start;
+  }
 }
 
 .virus-block__text {
@@ -78,19 +78,15 @@
 
   color: #4b4f51;
 
-    @media screen and (min-width: 768px) {
-      font-size: 20px;
-      line-height: 2.05;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 2.05;
+  }
 
-      
-    }
-
-        @media screen and (min-width: 1740px) {
-          font-size: 20px;
-          line-height: 2.15;
-        
-        
-        }
+  @media screen and (min-width: 1740px) {
+    font-size: 20px;
+    line-height: 2.15;
+  }
 }
 
 .virus-block__btn {

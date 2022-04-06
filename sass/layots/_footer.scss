@@ -1,86 +1,112 @@
 .footer__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include for-size(desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer__item {
-font-family: Lato;
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 1.22;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.22;
 
+  color: #00402e;
 
-
-color: #00402E;
-
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     color: $primary-title-color;
-}
+  }
 
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 
-&:not(:last-child){
-        margin-right: 8px;
-        
+  @include for-size(tablet) {
+    font-weight: normal;
+    font-size: 18px;
+
+    margin-bottom: 0px;
+    padding: 50px 0px 42px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
     }
+  }
 
-
-    @include for-size (tablet){
-    
-        font-weight: normal;
-        font-size: 18px;
-
-            margin-bottom: 0px;
-            padding: 50px 0px 42px;
-            
-            &:not(:last-child) {
-                margin-right: 15px;
-            }
-        
+  @include for-size(desktop) {
+    &:not(:last-child) {
+      margin-right: 58px;
     }
+  }
 }
 
 .footer__links-list {
-    justify-content: center;
-    display: flex;
-    margin-top: 32px;
-    margin-bottom: 36px;
+  justify-content: center;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 36px;
+
+  @include for-size(tablet) {
+    margin-left: 64px;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 224px;
+  }
 }
 
 .footer__link {
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  @include for-size(desktop) {
     &:not(:last-child) {
-        margin-right: 12px;
-        
-    
+      margin-right: 42px;
     }
+  }
 }
 
 .footer__mark {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    
-    
-    
-    color: #415E56;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
 
-    display: block;
-    text-align: center;
+  color: #415e56;
 
-    margin-bottom: 24px;
+  display: block;
+  text-align: center;
 
-    @include for-size(desktop) {
-        font-size: 23px;
-        line-height: 1.22;
-    }
+  margin-bottom: 24px;
+
+  @include for-size(desktop) {
+    font-size: 23px;
+    line-height: 1.22;
+    margin-top: 35px;
+  }
 }
 
 .footer__main-block {
-    @include for-size (tablet){
-        display: flex;
-    }
+  @media screen and (max-width: 1739px) {
+    margin-top: 24px;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+
+.footer-logo {
+  @include for-size(desktop) {
+    margin-right: 213px;
+  }
 }
