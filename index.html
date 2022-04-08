@@ -13,15 +13,17 @@
     <header class="container header">
       <div class="logo">
         <img src="./images/svg/logo.svg" alt="" />
-        <span class="logo-span">Covid - 19</span>
+        <span class="logo--span">Covid - 19</span>
       </div>
-      <nav class="mobile-menu" data-menu>
+      <nav class="mobile-menu" id="menu-container" data-menu>
         <div class="content">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#Overview">Overview</a></li>
-            <li class="nav__item"><a href="#Contagion">Contagion</a></li>
-            <li class="nav__item"><a href="#Symptoms">Symptoms</a></li>
-            <li class="nav__item"><a href="#Prevention">Prevention</a></li>
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#overview">Overview</a></li>
+            <li class="header__nav-item"><a href="#contagion">Contagion</a></li>
+            <li class="header__nav-item"><a href="#symptoms">Symptoms</a></li>
+            <li class="header__nav-item">
+              <a href="#prevention">Prevention</a>
+            </li>
           </ul>
           <a class="nav__btn" href="">Contact</a>
         </div>
@@ -29,7 +31,7 @@
       <button
         aria-label="Открыть меню"
         type="button"
-        class="btn--burger"
+        class="burger__btn"
         aria-expanded="false"
         aria-controls="menu-container"
         data-menu-button
@@ -50,7 +52,7 @@
     <main>
       <!-- hero -->
 
-      <section class="hero container" id="Treatment">
+      <section class="hero container" id="treatment">
         <div class="hero-block">
           <h1 class="hero__title">
             COVID-19 Alert<br />Stay at Home quarantine To stop Corona virus
@@ -61,7 +63,7 @@
           </p>
           <a class="hero__btn" href="">Let Us Help</a>
         </div>
-        <picture class="hero-image">
+        <picture class="hero__image">
           <source
             srcset="./images/hero.jpg 1x, ./images/hero@2x.jpg 2x"
             media="(min-width: 480px)"
@@ -70,42 +72,42 @@
         </picture>
       </section>
 
-      <!-- Covid-19 info -->
+      <!-- Overview -->
 
-      <section class="covid-info-block container" id="Overview">
-        <picture class="virus-picture">
+      <section class="overview container" id="overview">
+        <picture class="overview__picture">
           <source
             srcset="./images/virus.jpg 1x, ./images/virus@2x.jpg 2x"
             media="(min-width: 480px)"
           />
           <img src="./images/virus.jpg" alt="virus" />
         </picture>
-        <div class="virus-block">
+        <div class="overview-block">
           <h3 class="second-title">What Is Covid-19</h3>
           <h2 class="main-title">Coronavirus</h2>
-          <p class="virus-block__text">
+          <p class="overview-block__text">
             Corona viruses are a type of virus. There are many different kinds,
             and some cause disease. A newly identified type has caused a recent
             outbreak of respiratory illness now called COVID-19.Lauren Sauer,
             M.S., the director of operations with the Johns Hopkins Office of
             Critical Event Preparedness and Response
           </p>
-          <a class="virus-block__btn" href="">Learn More</a>
+          <a class="overview-block__btn" href="">Learn More</a>
         </div>
       </section>
 
-      <!-- Contagion-section -->
+      <!-- Contagion -->
 
-      <section class="contagion-section container" id="Contagion">
+      <section class="contagion container" id="contagion">
         <h3 class="second-title">Covid-19</h3>
         <h2 class="main-title">Contagion</h2>
         <p class="contagion__text">
           Corona viruses are a type of virus. There are many different kinds,
           and some cause disease. A newly identified type
         </p>
-        <ul class="contagion-list">
-          <li class="contagion-item">
-            <picture class="contagion-image">
+        <ul class="contagion__list">
+          <li class="contagion__item">
+            <picture class="contagion__image">
               <source
                 srcset="
                   ./images/air_transmission.jpg    1x,
@@ -115,13 +117,13 @@
               />
               <img src="./images/air_transmission.jpg" alt="coughing woman" />
             </picture>
-            <h3 class="contagion-title">Air Transmission</h3>
-            <p class="contagion-item__text">
+            <h3 class="contagion__item-title">Air Transmission</h3>
+            <p class="contagion__item-text">
               Objectively evolve tactical expertise before extensible
               initiatives. Efficiently simplify
             </p>
           </li>
-          <li class="contagion-item">
+          <li class="contagion__item">
             <picture class="contagion-image">
               <source
                 srcset="
@@ -132,12 +134,12 @@
               />
               <img src="./images/human_contacts.jpg" alt="keeping hands" />
             </picture>
-            <h3 class="contagion-title">Human Contacts</h3>
-            <p class="contagion-item__text">
+            <h3 class="contagion__item-title">Human Contacts</h3>
+            <p class="contagion__item-text">
               Washing your hands is one of thesimplest ways you can protect
             </p>
           </li>
-          <li class="contagion-item">
+          <li class="contagion__item">
             <picture class="contagion-image">
               <source
                 srcset="
@@ -151,8 +153,8 @@
                 alt="cocktail in plastic cup"
               />
             </picture>
-            <h3 class="contagion-title">Containted Objects</h3>
-            <p class="contagion-item__text">
+            <h3 class="contagion__item-title">Containted Objects</h3>
+            <p class="contagion__item-text">
               Use the tissue while sneezing,In this way, you can protect your
               droplets.
             </p>
@@ -160,18 +162,18 @@
         </ul>
       </section>
 
-      <!-- Symptomps-section -->
+      <!-- Symptomps -->
 
-      <section class="symptomps-section container" id="Symptoms">
+      <section class="symptomps container" id="symptoms">
         <h3 class="second-title">Covid-19</h3>
         <h2 class="main-title">Symptomps</h2>
-        <p class="symptomps-section__text">
+        <p class="symptomps__text">
           Corona viruses are a type of virus. There are many different kinds,
           and some cause disease. A newly identified type has caused a recent
           outbreak of respiratory
         </p>
 
-        <picture class="symptomps-image">
+        <picture class="symptomps__image">
           <source
             srcset="./images/symptoms.jpg 1x, ./images/symptoms@2x.jpg 2x"
             media="(min-width: 480px)"
@@ -180,23 +182,23 @@
         </picture>
       </section>
 
-      <!-- Instruction section -->
+      <!-- Prevention -->
 
-      <section class="instruction-section container" id="Prevention">
+      <section class="prevention container" id="prevention">
         <h3 class="second-title">Covid-19</h3>
         <h2 class="main-title">What should we do</h2>
-        <p class="instruction__main-text">
+        <p class="prevention__main-text">
           Corona viruses are a type of virus. There are many different kinds,
           and some cause disease. A newly identified type has caused
         </p>
-        <ul class="instruction-list">
-          <li class="instruction-item">
+        <ul class="prevention__list">
+          <li class="prevention__item">
             <div>
-              <div class="title-block">
-                <p class="number-title">01</p>
-                <h3 class="instruction-title">wear masks</h3>
+              <div class="prevention__title-block">
+                <p class="prevention__number-title">01</p>
+                <h3 class="prevention__item-title">wear masks</h3>
               </div>
-              <p class="instruction-text">
+              <p class="prevention__item-text">
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
@@ -204,7 +206,7 @@
                 Objectively
               </p>
             </div>
-            <picture class="instruction-image">
+            <picture class="prevention__image">
               <source
                 srcset="./images/mask.jpg 1x, ./images/mask@2x.jpg 2x"
                 media="(min-width: 480px)"
@@ -212,13 +214,13 @@
               <img src="./images/mask.jpg" alt="woman in medical mask" />
             </picture>
           </li>
-          <li class="instruction-item">
+          <li class="prevention__item">
             <div>
-              <div class="title-block">
-                <p class="number-title">02</p>
-                <h3 class="instruction-title">Wash Your Hands</h3>
+              <div class="prevention__title-block">
+                <p class="prevention__number-title">02</p>
+                <h3 class="prevention__item-title">Wash Your Hands</h3>
               </div>
-              <p class="instruction-text">
+              <p class="prevention__item-text">
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
@@ -226,7 +228,7 @@
                 Objectively Continually seize impactful vortals
               </p>
             </div>
-            <picture class="instruction-image">
+            <picture class="prevention__image">
               <source
                 srcset="./images/hands.jpg 1x, ./images/hands@2x.jpg 2x"
                 media="(min-width: 480px)"
@@ -234,13 +236,13 @@
               <img src="./images/hands.jpg" alt="woman washing hands" />
             </picture>
           </li>
-          <li class="instruction-item">
+          <li class="prevention__item">
             <div>
-              <div class="title-block">
-                <p class="number-title">03</p>
-                <h3 class="instruction-title">Use nose - rag</h3>
+              <div class="prevention__title-block">
+                <p class="prevention__number-title">03</p>
+                <h3 class="prevention__item-title">Use nose - rag</h3>
               </div>
-              <p class="instruction-text">
+              <p class="prevention__item-text">
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
@@ -248,7 +250,7 @@
                 Objectively
               </p>
             </div>
-            <picture class="instruction-image">
+            <picture class="prevention__image">
               <source
                 srcset="./images/rag.jpg 1x, ./images/rag@2x.jpg 2x"
                 media="(min-width: 480px)"
@@ -256,20 +258,20 @@
               <img src="./images/rag.jpg" alt="woman with napkins" />
             </picture>
           </li>
-          <li class="instruction-item">
+          <li class="prevention__item">
             <div>
-              <div class="title-block">
-                <p class="number-title">04</p>
-                <h3 class="instruction-title">Avoid contacts</h3>
+              <div class="prevention__title-block">
+                <p class="prevention__number-title">04</p>
+                <h3 class="prevention__item-title">Avoid contacts</h3>
               </div>
-              <p class="instruction-text">
+              <p class="prevention__item-text">
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
                 skills vis-a-vis pandemic
               </p>
             </div>
-            <picture class="instruction-image">
+            <picture class="prevention__image">
               <source
                 srcset="./images/contacts.jpg 1x, ./images/contacts@2x.jpg 2x"
                 media="(min-width: 480px)"
@@ -283,6 +285,7 @@
       <!-- Map -->
 
       <section class="container">
+        <h2 class="visually-hidden">Map of infection</h2>
         <picture>
           <source
             srcset="./images/map.jpg 1x, ./images/map@2x.jpg 2x"
@@ -299,20 +302,22 @@
           Have Question in mind? <br />
           Let us help you
         </h2>
-        <form class="form" action="">
+        <form class="form">
           <input
             class="input"
             type="email"
             placeholder="snmonydemo@gmail.com"
           />
-          <button class="form_button">Send</button>
+          <button class="form__button">Send</button>
         </form>
       </section>
     </main>
 
+    <!-- Footer -->
+
     <footer class="container">
       <div class="footer__main-block">
-        <div class="logo footer-logo">
+        <div class="logo footer--logo">
           <img src="./images/svg/logo.svg" alt="" />
           <span class="logo-span">Covid - 19</span>
         </div>

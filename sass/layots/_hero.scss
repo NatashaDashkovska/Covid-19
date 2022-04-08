@@ -1,8 +1,9 @@
 .hero {
   text-align: center;
   @include for-size(tablet) {
-    display: flex;
     padding-top: 30px;
+
+    display: flex;
     text-align: start;
   }
 }
@@ -12,14 +13,12 @@
   margin-bottom: 12px;
 
   font-family: Red Hat Display;
-  font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 1.22;
-
   text-transform: capitalize;
 
-  color: #fa5652;
+  color: $primary-title-color;
 
   @include for-size(tablet) {
     text-align: start;
@@ -35,14 +34,10 @@
   margin-bottom: 16px;
 
   font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 1.4;
-
   text-transform: capitalize;
-
-  color: #4b4f51;
+  color: $main-title-color;
 
   @include for-size(tablet) {
     line-height: 1.9;
@@ -54,29 +49,27 @@
 }
 
 .hero__btn {
-  display: inline-block;
-
-  background: #fb4c47;
-  box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
-  border-radius: 65px;
-
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  text-transform: capitalize;
-
-  color: #ffffff;
-
   padding: 12px 36px;
   margin-bottom: 36px;
 
+  display: inline-block;
+
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.21;
+  text-transform: capitalize;
+  color: $main-white-color;
+
+  background-color: $primary-title-color;
+  box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+  border-radius: 65px;
+
   &:hover,
   &:focus {
-    background-color: #ffffff;
-    color: #fb4c47;
-    outline: 2px solid #fb4c47;
+    background-color: $main-white-color;
+    color: $primary-title-color;
+    outline: 2px solid $primary-title-color;
   }
 
   @include for-size(tablet) {
@@ -84,7 +77,7 @@
   }
 }
 
-.hero-image {
+.hero__image {
   @include for-size(tablet) {
     position: absolute;
     left: 50%;

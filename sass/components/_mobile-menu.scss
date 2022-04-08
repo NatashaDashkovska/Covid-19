@@ -48,7 +48,7 @@
   transform: translateX(0);
 }
 
-.btn--burger {
+.burger__btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -71,14 +71,14 @@
   }
 }
 
-.btn--burger.is-open .icon-burger-open {
+.burger__btn.is-open .icon-burger-open {
   display: block;
 }
 
-.btn--burger.is-open .icon-burger-close {
+.burger__btn.is-open .icon-burger-close {
   display: none;
 }
 
-.btn--burger .icon-burger-open {
+.burger__btn .icon-burger-open {
   display: none;
 }

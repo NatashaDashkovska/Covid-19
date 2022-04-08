@@ -1,3 +1,13 @@
+.footer__main-block {
+  @media screen and (max-width: 1739px) {
+    margin-top: 24px;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+
 .footer__list {
   display: flex;
   flex-wrap: wrap;
@@ -32,12 +42,10 @@
     text-decoration: none;
 
     font-family: Lato;
-    font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 1.22;
-
-    color: #00402e;
+    color: $secondary-title-color;
 
     &:hover,
     &:focus {
@@ -45,22 +53,22 @@
     }
 
     @include for-size(tablet) {
-      font-weight: normal;
       font-size: 18px;
     }
   }
 }
 
 .footer__links-list {
-  justify-content: center;
-  display: flex;
   margin-top: 32px;
   margin-bottom: 36px;
 
+  justify-content: center;
+  display: flex;
+
   @include for-size(tablet) {
     margin-left: 64px;
-    align-items: center;
     padding-top: 12px;
+    align-items: center;
   }
 
   @include for-size(desktop) {
@@ -81,38 +89,20 @@
 }
 
 .footer__mark {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-
-  color: #415e56;
+  margin-bottom: 24px;
 
   display: block;
   text-align: center;
 
-  margin-bottom: 24px;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #415e56;
 
   @include for-size(desktop) {
+    margin-top: 35px;
     font-size: 23px;
     line-height: 1.22;
-    margin-top: 35px;
-  }
-}
-
-.footer__main-block {
-  @media screen and (max-width: 1739px) {
-    margin-top: 24px;
-  }
-
-  @include for-size(tablet) {
-    display: flex;
-  }
-}
-
-.footer-logo {
-  @include for-size(desktop) {
-    margin-right: 213px;
   }
 }

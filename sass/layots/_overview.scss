@@ -1,0 +1,107 @@
+.overview {
+  @include for-size(tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) and(max-width: 1739px ) {
+    padding-bottom: 24px;
+  }
+}
+
+.overview__picture {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include for-size(tablet) {
+    min-width: 50%;
+    margin-right: 20px;
+  }
+}
+
+.overview-block {
+  text-align: center;
+
+  @include for-size(desktop) {
+    text-align: start;
+  }
+}
+
+.overview-block__text {
+  margin-top: 18px;
+
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 2.15;
+  text-transform: capitalize;
+  color: $main-title-color;
+
+  @include for-size(tablet) {
+    font-size: 20px;
+    line-height: 2.05;
+  }
+
+  @include for-size(desktop) {
+    font-size: 20px;
+    line-height: 2.15;
+  }
+}
+
+.overview-block__btn {
+  margin-top: 56px;
+  padding: 22px 50px;
+
+  display: inline-block;
+
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: $primary-title-color;
+
+  background-color: rgba(250, 86, 82, 0.15);
+  border-radius: 65px;
+
+  &:hover,
+  &:focus {
+    color: $main-white-color;
+    background-color: $primary-title-color;
+  }
+}
+
+.second-title {
+  margin-top: 60px;
+
+  font-family: Red Hat Display;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 1.24;
+
+  color: $primary-title-color;
+
+  @include for-size(tablet) {
+    margin-bottom: 6px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 8px;
+  }
+}
+
+.main-title {
+  font-family: Red Hat Display;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.2;
+
+  color: $secondary-title-color;
+
+  @include for-size(tablet) {
+    margin-bottom: 24px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 31px;
+  }
+}

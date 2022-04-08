@@ -1,0 +1,20 @@
+.symptomps {
+  text-align: center;
+  align-items: center;
+}
+
+.symptomps__text {
+  text-align: center;
+
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.15;
+  text-transform: capitalize;
+  color: $main-title-color;
+}
+
+.symptomps__image {
+  display: flex;
+  justify-content: center;
+}
