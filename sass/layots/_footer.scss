@@ -9,27 +9,11 @@
 }
 
 .footer__item {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 1.22;
-
-  color: #00402e;
-
-  &:hover,
-  &:focus {
-    color: $primary-title-color;
-  }
-
   &:not(:last-child) {
     margin-right: 10px;
   }
 
   @include for-size(tablet) {
-    font-weight: normal;
-    font-size: 18px;
-
     margin-bottom: 0px;
     padding: 50px 0px 42px;
 
@@ -41,6 +25,28 @@
   @include for-size(desktop) {
     &:not(:last-child) {
       margin-right: 58px;
+    }
+  }
+
+  & > a {
+    text-decoration: none;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.22;
+
+    color: #00402e;
+
+    &:hover,
+    &:focus {
+      color: $primary-title-color;
+    }
+
+    @include for-size(tablet) {
+      font-weight: normal;
+      font-size: 18px;
     }
   }
 }
