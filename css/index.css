@@ -791,7 +791,7 @@ img {
 @media (min-width: 1740px) {
   .hero-block {
     margin-right: 50%;
-    padding: 265px 0px 230px;
+    padding: 265px 0px 100px;
   }
 }
 
@@ -1172,7 +1172,7 @@ img {
   line-height: 1.45;
   text-transform: capitalize;
   color: #fa5652;
-  background-color: #ffffff;
+  background-color: #fee6e5;
   border-radius: 50%;
 }
 
@@ -1305,7 +1305,7 @@ img {
 
 @media (min-width: 1740px) {
   .form-section {
-    margin-top: 150px;
+    margin-top: 30px;
   }
 }
 
